@@ -24,7 +24,6 @@ export const DatabaseProviders = [
   {
     provide: 'MONGODB_DATA_SOURCE',
     useFactory: async () => {
-      console.log(MONGODB_DATA_SOURCE);
       await MONGODB_DATA_SOURCE.initialize();
       console.log('mongoDB 已连接');
       return MONGODB_DATA_SOURCE;

@@ -1,8 +1,8 @@
 REDIS_CONFIG:
-  host: "containers-us-west-165.railway.app"  # redis 链接
-  port: 7952         # redis 端口
-  user: "default"                    # redis 用户名
-  auth: "m2nxBXmT4PmY0ClHkw1U"       # redis 连接密码
+  # host: "containers-us-west-165.railway.app"  # redis 链接
+  # port: 7952         # redis 端口
+  # user: "default"                    # redis 用户名
+  # auth: "m2nxBXmT4PmY0ClHkw1U"       # redis 连接密码
   db: "0"           # redis 数据库
   url: "redis://default:m2nxBXmT4PmY0ClHkw1U@containers-us-west-165.railway.app:5984"
 

@@ -10,11 +10,12 @@ import { RedisCacheService } from './redis-cache.service';
       useFactory: async () => {
         return {
           store: redisStore as any,
-          host: getConfig('REDIS_CONFIG').host,
-          port: getConfig('REDIS_CONFIG').port,
+          url: getConfig('REDIS_CONFIG').url,
+          // host: getConfig('REDIS_CONFIG').host,
+          // port: getConfig('REDIS_CONFIG').port,
           db: getConfig('REDIS_CONFIG').db, //目标库,
-          user: getConfig('REDIS_CONFIG').user,
-          auth_pass: getConfig('REDIS_CONFIG').auth, // 密码,没有可以不写
+          // user: getConfig('REDIS_CONFIG').user,
+          // auth_pass: getConfig('REDIS_CONFIG').auth, // 密码,没有可以不写
         };
       },
     }),
