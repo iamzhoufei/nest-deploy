@@ -77,10 +77,10 @@ async function bootstrap() {
   // 开始监听端口
   console.log(
     `=========process.env.PORT=======${
-      process.env.PORT || 'default is 3000'
+      process.env.PORT || 'default is 4000'
     }==========`,
   );
-  await app.listen(3000);
+  await app.listen(4000);
 }
 
 bootstrap();
