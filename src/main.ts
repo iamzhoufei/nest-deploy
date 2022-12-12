@@ -77,10 +77,19 @@ async function bootstrap() {
   // 开始监听端口
   console.log(
     `=========process.env.PORT=======${
-      process.env.PORT || 'default is 4000'
+      process.env.PORT || 'default is 8080'
     }==========`,
   );
-  await app.listen(process.env.PORT || 4000);
+  await app.listen(
+    process.env.PORT || '8080',
+    (err: Error, address: string) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(`server success at: ${address}`);
+      }
+    },
+  );
 }
 
 bootstrap();
