@@ -80,7 +80,7 @@ async function bootstrap() {
       process.env.PORT || 'default is 4000'
     }==========`,
   );
-  await app.listen(4000);
+  await app.listen(process.env.PORT || 4000);
 }
 
 bootstrap();
